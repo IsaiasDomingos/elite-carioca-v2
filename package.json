@@ -1,7 +1,8 @@
 {
-  "name": "elite-carioca-sistema",
+  "name": "sistema-barbearia-isd",
   "version": "1.0.0",
-  "private": true,
+  "description": "Sistema Elite Carioca - Local Sandbox",
+  "main": "src/index.tsx",
   "dependencies": {
     "firebase": "9.23.0",
     "framer-motion": "10.12.16",
@@ -9,11 +10,6 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-scripts": "5.0.1"
-  },
-  "devDependencies": {
-    "@types/react": "18.2.0",
-    "@types/react-dom": "18.2.0",
-    "typescript": "4.9.5"
   },
   "scripts": {
     "start": "react-scripts start",
