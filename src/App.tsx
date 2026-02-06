@@ -1374,12 +1374,10 @@ const App: React.FC = () => {
                         {formatBRL(h.valor || 0)}
                       </td>
                       <td className="py-6 px-4 text-right text-slate-500 font-mono">
-                        {h.dataConclusao
-                          ?.toDate()
-                          .toLocaleTimeString("pt-BR", {
-                            hour: "2-digit",
-                            minute: "2-digit",
-                          })}
+                        {h.dataConclusao?.toDate().toLocaleTimeString("pt-BR", {
+                          hour: "2-digit",
+                          minute: "2-digit",
+                        })}
                       </td>
                     </tr>
                   ))}
@@ -1426,7 +1424,7 @@ const EliteToasts = ({ toasts }: { toasts: any[] }) => {
             >
               {toast.type === "sucesso" ? (
                 <Check size={20} />
-              ) : toast.type === "erro" ? (
+              ) : toast.type === "erro:" ? (
                 <AlertCircle size={20} />
               ) : (
                 <Info size={20} />
